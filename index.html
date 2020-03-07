@@ -3,12 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize.min.css">
     <title>Custom Materialize Theme</title>
 </head>
 <body>
+    <nav class="blue darken-2">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="brand-logo">Madmin</a>
+                <a href="#" data-activates="side-nav" class="button-collapse show-on-large right">
+                    <i class="material-icons">menu</i>
+                </a>
+            </div>
+        </div>
+    </nav>
 
 
-    
 
     
     <!-- Import jQuery before materialize.js -->
@@ -17,7 +28,10 @@
 
     <!-- Custom JS & jQuery here -->
     <script>
-
+        document.addEventListener("DOMContentLoaded", function() {
+            // Initialize Side Navigation
+            const sideNav = document.querySelector('.button-collapse').sideNav();
+        })
     </script>
     
 </body>
