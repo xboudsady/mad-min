@@ -20,6 +20,7 @@ Will be using JavaScript
 
 ### Dashboard
 * Top level navigation, along with sidebar navigation. Reize to siebar navigation when screen is smaller.
+* Added Counter to Cards, and preloader function
 
 ### Posts
 
