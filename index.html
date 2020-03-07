@@ -115,7 +115,15 @@
 
     <!-- Custom JS & jQuery here -->
     <script>
-       $(document).ready(function() {
+        // Hide Sections
+        $('.section').hide();
+
+        setTimeout(function() {
+        $(document).ready(function() {
+            // Show sections
+            $('.section').fadeIn();
+
+
            // Initilize Side Navigation
            $('.button-collapse').sideNav();
 
@@ -132,6 +140,9 @@
                 });
             })
        })
+        },1000);
+
+       
     </script>
     
 </body>
