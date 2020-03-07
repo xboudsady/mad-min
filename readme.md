@@ -11,10 +11,15 @@ Will be using JavaScript
 * Comment for for toast dialog for approrve/deny
 * Quick Todo
 
+## Technology Used
+* [Materialize](https://materializecss.com/) - A modern responsive front-end framework based on Material Design
+* [jQuery](https://jquery.com/) - jQuery is a fast, small, and feature-rich JavaScript library.
+
 ## Page Setup
 
 
 ### Dashboard
+* Top level navigation, along with sidebar navigation. Reize to siebar navigation when screen is smaller.
 
 ### Posts
 
