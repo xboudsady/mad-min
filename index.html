@@ -293,6 +293,15 @@
                     e.preventDefault();
                 });
 
+                // Delete Todos Form Action
+                $('.todos').on('click', '.delete', function(e) {
+                    $(this).parent().parent().remove();
+
+                    Materialize.toast('Todo Removed', 3000);
+                    
+                    e.preventDefault;
+                });
+
             });
         }, 1000);
 
