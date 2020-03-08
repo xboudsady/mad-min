@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/main.css">
     <title>Custom Materialize Theme</title>
 </head>
-<body>
+<body class="grey lighten-4">
     <!-- Navigation Menu -->
     <nav class="blue darken-2">
         <div class="container">
@@ -242,43 +242,61 @@
         $('.section').hide();
 
         setTimeout(function() {
-        $(document).ready(function() {
-            // Show sections
-            $('.section').fadeIn();
+            $(document).ready(function() {
+                // Show sections
+                $('.section').fadeIn();
 
-            // Hide Preloader
-            $('.loader').fadeOut();
+                // Hide Preloader
+                $('.loader').fadeOut();
 
+                // Initilize Side Navigation
+                $('.button-collapse').sideNav();
 
-           // Initilize Side Navigation
-           $('.button-collapse').sideNav();
-
-            // Counter Animation
-            $('.count').each(function() {
-                $(this).prop('Counter', 0).animate({
-                    Counter: $(this).text()
-                }, {
-                    duration: 1000,
-                    easing: 'swing',
-                    step: function(now) {
-                        $(this).text(Math.ceil(now));
-                    }
+                // Counter Animation
+                $('.count').each(function() {
+                    $(this).prop('Counter', 0).animate({
+                        Counter: $(this).text()
+                    }, {
+                        duration: 1000,
+                        easing: 'swing',
+                        step: function(now) {
+                            $(this).text(Math.ceil(now));
+                            }
+                        });
                 });
-            })
-       })
+
+                // Comments - Arrove & Deny Action
+                $('.approve').click(function(e) {
+                    Materialize.toast('Comment Approved', 3000);
+                    e.preventDefault();
+                });
+
+                $('.deny').click(function(e) {
+                    Materialize.toast('Comment Denied', 3000);
+                });
+
+                // Quick Todos Form Action
+                $('#todo-form').submit(function(e) {
+                    const output = `
+                                    <li class="collection-item">
+                                        <div>${$(`#todo`).val()}
+                                            <a href="#!" class="secondary-content delete">
+                                                <i class="material-icons">close</i>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    `;
+                    $('.todos').append(output);
+                    
+                    Materialize.toast('Todo Added', 3000); 
+                    
+                    e.preventDefault();
+                });
+
+            });
         }, 1000);
 
-        // Comments - Arrove & Deny
-        $('.approve').click(function(e) {
-            Materialize.toast('Comment Approved', 3000);
-            e.preventDefault();
-        });
 
-        $('.deny').click(function(e) {
-            Materialize.toast('Comment Denied', 3000);
-        });
-
-       
     </script>
     
 </body>
