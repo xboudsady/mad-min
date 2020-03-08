@@ -24,6 +24,8 @@ Will be using JavaScript
 * Added Counter to Cards, and preloader function to hide section
 * Using ChartJS to provide information on Dialy Visitors
 * Latest users comments with approve or deny, with toast message to show actions.
+* Show recent posts as a table
+* Quick Todo Form
 
 ### Posts
 
