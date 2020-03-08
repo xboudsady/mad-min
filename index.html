@@ -211,10 +211,12 @@
         </div>
     </section>
 
+
     <!-- Footer -->
     <footer class="section blue darken-2 white-text center">
         <p>Madmin Panel Copyright &copy; 2020</p>
     </footer>
+
 
     <!-- Fix Action Button -->
     <div class="fixed-action-btn">
@@ -240,6 +242,35 @@
         </ul>
     </div>
 
+    <!-- Add Post Modal -->
+    <div id="post-modal" class="modal">
+        <div class="modal-content">
+            <h4>Add Post</h4>
+            <form>
+                <div class="input-field">
+                    <input type="text" id="title">
+                    <label for="title">Title</label>
+                </div>
+                <div class="input-field">
+                    <select>
+                        <option value="" disabled selected>Select Option</option>
+                        <option value="1">Web Development</option>
+                        <option value="2">Graphic Design</option>
+                        <option value="3">Tech Gadgets</option>
+                    </select>
+                    <label>Category</label>
+                </div>
+                <div class="input-field">
+                    <textarea name="body" id="body" class="materialize-textarea"></textarea>
+                    <label for="body"></label>
+                </div>
+            </form>
+            <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close btn blue white-text">Submit</a>
+            </div>
+        </div>
+    </div>
+
 
 
     <!-- Preloader -->
@@ -262,6 +293,9 @@
     <script src="js/materialize.min.js"></script>
     <script src="js/canvasjs.min.js"></script>
 
+    <!-- CK Editor -->
+    <script src="js/ckeditor5.17.0.0.js"></script>
+
     <!-- Load our ChartJS -->
     <script src="js/chart.js"></script>
 
@@ -278,8 +312,14 @@
                 // Hide Preloader
                 $('.loader').fadeOut();
 
-                // Initilize Side Navigation
+                // Initialize Side Navigation
                 $('.button-collapse').sideNav();
+
+                // Initialize Modal
+                $('.modal').modal();
+
+                // Initialize Select
+                $('select').material_select();
 
                 // Counter Animation
                 $('.count').each(function() {

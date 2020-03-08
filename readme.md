@@ -17,6 +17,7 @@ Will be using JavaScript
 * [Materialize](https://materializecss.com/) - A modern responsive front-end framework based on Material Design
 * [jQuery](https://jquery.com/) - jQuery is a fast, small, and feature-rich JavaScript library.
 * [CanvasJS](https://canvasjs.com/) - Responsive HTML5 Charting Library with Simple API and 10x Performance - makes your dashboards fly!
+* [CKEditor](https://ckeditor.com/) - Smart WYSIWYG editor components with collaborative editing.
 
 ## Page Setup
 
@@ -29,6 +30,7 @@ Will be using JavaScript
 * Show recent posts as a table
 * Quick Todo Form
 * Floating Button, with a modal form for each action.
+
 
 ### Posts
 
