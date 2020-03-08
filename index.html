@@ -107,6 +107,21 @@
         </div>
     </section>
 
+    <!-- Section: Visitors -->
+    <section class="section section-visitors blue lighten-4">
+        <div class="row">
+            <div class="col s12 m6 l8">
+                <div class="card-panel">
+                    <div id="chartContainer" style="height: 300px; width: 100%;">
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l4">
+                <!-- Latest Comments -->
+            </div>
+        </div>
+    </section>
+
     <!-- Preloader -->
     <div class="loader preloader-wrapper big active">
         <div class="spinner-layer spinner-blue-only">
@@ -126,6 +141,9 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/materialize.min.js"></script>
     <script src="js/canvasjs.min.js"></script>
+
+    <!-- Load our ChartJS -->
+    <script src="js/chart.js"></script>
 
     <!-- Custom JS & jQuery here -->
     <script>
@@ -157,7 +175,7 @@
                 });
             })
        })
-        },1000);
+        }, 1000);
 
        
     </script>
