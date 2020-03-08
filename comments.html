@@ -57,6 +57,7 @@
         </div>
     </nav>
 
+
     <!-- Seciton: Comments -->
     <section class="section section-comments grey lighten-4">
         <div class="container">
@@ -66,7 +67,7 @@
                         <div class="card-content">
                             <span class="card-title">Comments</span>
                             <table class="striped">
-                                <tbody>
+                                <tbody class="table-body">
                                     <tr>
                                         <td width="70">
                                             <img src="img/person1.jpg" alt="" class="responsive-img circle" style="width: 40px; margin-left: 10px;">
@@ -102,6 +103,22 @@
                                     <tr>
                                         <td width="70">
                                             <img src="img/person3.jpg" alt="" class="responsive-img circle" style="width: 40px; margin-left: 10px;">
+                                        </td>
+                                        <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, doloremque.</td>
+                                        <td>
+                                            <a href="#!" class="approve green-text">
+                                                <i class="material-icons">done</i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#!" class="deny red-text">
+                                                <i class="material-icons">close</i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="70">
+                                            <img src="img/person4.jpg" alt="" class="responsive-img circle" style="width: 40px; margin-left: 10px;">
                                         </td>
                                         <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, doloremque.</td>
                                         <td>
@@ -164,29 +181,7 @@
     </footer>
 
 
-    <!-- Fix Action Button -->
-    <div class="fixed-action-btn">
-        <a href="#category-modal" class="modal-trigger btn-floating btn-large red">
-            <i class="material-icons">add</i>
-        </a>
-    </div>
-
-
-    <!-- Add Category Modal -->
-    <div id="category-modal" class="modal">
-        <div class="modal-content">
-            <h4>Add Category</h4>
-            <form>
-                <div class="input-field">
-                    <input type="text" id="category-title">
-                    <label for="category-title">Title</label>
-                </div>
-            </form>
-            <div class="modal-footer">
-                <a href="#!" class="modal-action modal-close btn blue white-text">Submit</a>
-            </div>
-        </div>
-    </div>
+    
 
 
     <!-- Preloader -->
@@ -232,14 +227,22 @@
                 // Initialize Select
                 $('select').material_select();
 
-                // Comments - Arrove & Deny Action
-                $('.approve').click(function(e) {
+                // Delete Comments when Approved
+                $('.table-body').on('click', '.approve', function(e) {
+                    $(this).parent().parent().remove();
+
                     Materialize.toast('Comment Approved', 3000);
-                    e.preventDefault();
+                    
+                    e.preventDefault;
                 });
 
-                $('.deny').click(function(e) {
+                // Delete Comments when Denied
+                $('.table-body').on('click', '.deny', function(e) {
+                    $(this).parent().parent().remove();
+
                     Materialize.toast('Comment Denied', 3000);
+                    
+                    e.preventDefault;
                 });
 
 
