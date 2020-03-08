@@ -200,6 +200,16 @@
        })
         }, 1000);
 
+        // Comments - Arrove & Deny
+        $('.approve').click(function(e) {
+            Materialize.toast('Comment Approved', 3000);
+            e.preventDefault();
+        });
+
+        $('.deny').click(function(e) {
+            Materialize.toast('Comment Denied', 3000);
+        });
+
        
     </script>
     

@@ -23,7 +23,7 @@ Will be using JavaScript
 * Top level navigation, along with sidebar navigation. Reize to siebar navigation when screen is smaller.
 * Added Counter to Cards, and preloader function to hide section
 * Using ChartJS to provide information on Dialy Visitors
-* Latest users comments with approve or deny
+* Latest users comments with approve or deny, with toast message to show actions.
 
 ### Posts
 
