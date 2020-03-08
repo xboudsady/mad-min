@@ -33,8 +33,13 @@ Will be using JavaScript
 
 
 ### Posts
+* Allows users to create posts, and view details of posts.
+* Table list pagination
+* Fix Action Button to create new posts.
 
 ### Categories
+* Allows user to create new categories.
+* Table list pagination.
 
 ### Users
 
