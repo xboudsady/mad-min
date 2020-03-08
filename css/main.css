@@ -3,3 +3,8 @@
     top: 40%;
     left: 47%;
 }
+
+/* Change the default height of CKEditor */
+.ck-editor__editable_inline {
+    min-height: 200px;
+}
