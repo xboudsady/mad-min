@@ -262,7 +262,7 @@
                 </div>
                 <div class="input-field">
                     <textarea name="body" id="body" class="materialize-textarea"></textarea>
-                    <label for="body"></label>
+                    <label for="body">Body</label>
                 </div>
             </form>
             <div class="modal-footer">
@@ -294,7 +294,8 @@
     <script src="js/canvasjs.min.js"></script>
 
     <!-- CK Editor -->
-    <script src="js/ckeditor5.17.0.0.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/17.0.0/classic/ckeditor.js"></script>
+    <!-- <script src="js/ckeditor5.17.0.0.js"></script> -->
 
     <!-- Load our ChartJS -->
     <script src="js/chart.js"></script>
@@ -370,6 +371,13 @@
                     
                     e.preventDefault;
                 });
+
+                // CKEditor
+                ClassicEditor
+                    .create(document.querySelector('#body'))
+                    .catch(error => {
+                        console.error(error);
+                    });
 
             });
         }, 1000);
