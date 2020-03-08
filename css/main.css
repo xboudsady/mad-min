@@ -8,3 +8,17 @@
 .ck-editor__editable_inline {
     min-height: 200px;
 }
+
+.login {
+    margin-top: 70px;
+    margin-bottom:  70px;
+}
+
+
+
+.btn-extended {
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
