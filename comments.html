@@ -73,12 +73,12 @@
                                         </td>
                                         <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, vel?</td>
                                         <td>
-                                            <a href="#!" class="green-text">
+                                            <a href="#!" class="approve green-text">
                                                 <i class="material-icons">done</i>
                                             </a>
                                         </td>
                                         <td>
-                                            <a href="#!" class="red-text">
+                                            <a href="#!" class="deny red-text">
                                                 <i class="material-icons">close</i>
                                             </a>
                                         </td>
@@ -89,12 +89,12 @@
                                         </td>
                                         <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, corporis!</td>
                                         <td>
-                                            <a href="#!" class="green-text">
+                                            <a href="#!" class="approve green-text">
                                                 <i class="material-icons">done</i>
                                             </a>
                                         </td>
                                         <td>
-                                            <a href="#!" class="red-text">
+                                            <a href="#!" class="deny red-text">
                                                 <i class="material-icons">close</i>
                                             </a>
                                         </td>
@@ -105,12 +105,12 @@
                                         </td>
                                         <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, doloremque.</td>
                                         <td>
-                                            <a href="#!" class="green-text">
+                                            <a href="#!" class="approve green-text">
                                                 <i class="material-icons">done</i>
                                             </a>
                                         </td>
                                         <td>
-                                            <a href="#!" class="red-text">
+                                            <a href="#!" class="deny red-text">
                                                 <i class="material-icons">close</i>
                                             </a>
                                         </td>
@@ -231,6 +231,16 @@
 
                 // Initialize Select
                 $('select').material_select();
+
+                // Comments - Arrove & Deny Action
+                $('.approve').click(function(e) {
+                    Materialize.toast('Comment Approved', 3000);
+                    e.preventDefault();
+                });
+
+                $('.deny').click(function(e) {
+                    Materialize.toast('Comment Denied', 3000);
+                });
 
 
             });
