@@ -14,6 +14,7 @@ Will be using JavaScript
 ## Technology Used
 * [Materialize](https://materializecss.com/) - A modern responsive front-end framework based on Material Design
 * [jQuery](https://jquery.com/) - jQuery is a fast, small, and feature-rich JavaScript library.
+* [CanvasJS](https://canvasjs.com/) - Responsive HTML5 Charting Library with Simple API and 10x Performance - makes your dashboards fly!
 
 ## Page Setup
 
