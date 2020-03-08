@@ -1,5 +1,7 @@
 # Madmen
 
+[Demo Site](https://xboudsady.github.io/madmin/)
+
 Theme using Material Admin. Admin panel that has interactivity. Things happens in the UI, using jQuery.
 This is a dumy dahshoard.
 
@@ -26,6 +28,7 @@ Will be using JavaScript
 * Latest users comments with approve or deny, with toast message to show actions.
 * Show recent posts as a table
 * Quick Todo Form
+* Floating Button, with a modal form for each action.
 
 ### Posts
 
